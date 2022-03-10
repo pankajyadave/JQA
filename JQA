@@ -1,0 +1,236 @@
+
+1. What is Interface?
+
+•	Interface is used to achieve 100 % of abstraction. Because Interface contains only incomplete /abstract methods.
+•	By using implements keyword, we can inherit interface.
+•	And using interface we can achieve multiple inheritance.
+
+2. Abstract Class?
+
+•	Abstract class is used to achieve 0-100% abstraction. 
+•	Abstract class contains complete and incomplete (abstract and non-abstract method) method both. 
+•	We cannot initialize the object of abstract class.
+•	By using extends keyword, we can inherit abstract class.
+
+
+3. Final, finally and finalize?
+  
+ 
+
+ 
+
+
+
+
+
+3. Constructor?
+
+•	Constructor is a special type of method when we need to initialize the memory at the compile time, we use constructor.
+•	Constructor name and class name should be same. 
+•	Constructor does not have any return type, not even void.
+•	Constructor executes automatically when we create an object. 
+
+Constructors are two types:-
+
+1.	Default constructor
+
+•	A constructor which does not have any parameter is called default constructor.
+2.	Parameterized constructor
+
+•	A constructor through which we can pass one or more parameter is called parameterized constructor.
+
+4. String, String Buffer and String Builder
+	String is non-primitive data type.
+	String is the sequence of characters.
+	Strings are immutable in java.
+	It contains methods that can perform certain operations on strings. Example – concat (), equals (), length () etc.
+	There are two ways to create string object-
+o	String literal
+o	With use of new keyword
+	To create string, there are 3 classes-
+o	String 	
+o	String Buffer
+o	String Builder
+ 
+5. Exception handling
+The Exception Handling in Java is one of the powerful mechanisms to handle the runtime errors so that normal flow of the application can be maintained.
+
+Java Exception Keywords
+There are 5 keywords which are used in handling exceptions in Java.
+Keyword	Description
+Try	The "try" keyword is used to specify a block where we should place exception code. The try block must be followed by either catch or finally. It means, we can't use try block alone.
+Catch	The "catch" block is used to handle the exception. It must be preceded by try block which means we can't use catch block alone. It can be followed by finally block later.
+Finally	The "finally" block is used to execute the important code of the program. It is executed whether an exception is handled or not.
+Throw	The "throw" keyword is used to throw the exception.
+Throws	The "throws" keyword is used to declare exceptions. It doesn't throw the exception. 
+ 
+6. Static:-
+Static Keyword:
+
+Static keyword in java mainly used for memory management. 
+
+We can apply static keyword with variables, methods and blocks.
+
+ The static keyword belongs to the class rather than object. 
+
+•	Variable
+•	Method
+•	Block
+
+•	Variable: if we use static keyword with variable then we can call static variable. 
+
+Static variable gets memory only once at the time of class loading. 
+
+•	Static method:
+A static method belongs to class rather than object.
+
+A static method can be invoked without the need for creating an instance of class. 
+
+A static method can access only static data member. We can’t access non static data member. 
+
+•	Static block
+Static block is used to initialize the static data member.
+
+Static block is execute before the main method at the time of class loading. 
+
+
+7. Hash map and linked has map:- 
+
+Map:
+Map is an interface. It is working on Key and value pair. 
+
+Map is contains some classes like: hash map, linked hash map, tree map.
+
+Hash Map: 
+
+•	Hash map is working on Key and value pair. And Key will be always unique,
+But value can be duplicate.
+
+•	Hash map is not maintaining insertion order.
+•	It is non-synchronized.
+
+Linked Hash Map
+
+Linked Hash Map is just like Hash map with an additional feature of maintaining an order of inserted elements.
+•	It is non-synchronized.
+•	It contains only unique elements.
+•	It may have one null key and multiple null values.
+
+
+8. Hash set and linked hash set
+Hash Set
+•	Hash set is used to insert the data dynamically. 
+•	It contains unique elements. 
+•	Hash set is not maintain insertion order, because hash set is working on Hash code. 
+•	Hash set is initializing a memory by default 16. 
+•	When 16 is full the increase 0.75.
+
+Linked Hash Set
+Linked Hash Set class is quite similar to the Hash Set.
+
+It allows us to maintain the insertion order of the elements.
+
+It allows us to easily insert, update, remove, and maintain the elements.
+
+•	It contains unique elements.
+•	It is non-synchronized.
+
+9. Collection and Array:-
+A collection is a framework or we can say collection is an interface.Because collection contains classes and interfaces. 
+
+Collection framework provides many interfaces (Set, List,) and classes (Array list, Linked list, Hash Set, Linked Hash Set, Tree Set).
+
+Array:-
+Array is a collection of similar data type.
+Array stores the memory as a static.
+Array in Java is index-based, the first element of the array is stored at the 0th index, 2nd element is stored on 1st index and so on.
+There are two types of array.
+•	Single Dimensional Array
+•	Multidimensional Array
+
+
+
+10. Tree map:-
+Tree Map
+Tree Map is a red-black tree based implementation. It provides an efficient means of storing key-value pairs in sorted order.
+•	Tree Map contains values based on the key.
+•	Tree Map contains only unique elements.
+•	Tree Map cannot have a null key but can have multiple null values.
+•	Tree Map is non-synchronized.
+•	Tree Map maintains ascending order.
+
+ Super Keyword
+•	The super keyword is a reference variable which is used to refer immediate parent class object.
+•	Super keyword is used to call the methods and properties of parent class.
+
+This Keyword
+•	this keyword is a reference variable, 
+•	when we have same name of variable in same class then we create a difference between local variable and global variable using this keyword. 
+•	And this keyword is always refer to the global variable.
+•	This keyword is used to access methods and properties of the current class.
+Inheritance
+•	Inheritance is a concept that acquires the properties from one class to another class.
+•	A class can inherit attributes and methods from another class by using inheritance.
+
+The class which inherits the properties of other class is known as child class or sub class.
+The class whose properties are inherited is known as parent class or superclass.
+Why use inheritance in java
+•	We use inheritance for Method Overriding and for Code Reusability.
+Inheritance are 5 types-
+1.	Single level
+2.	Multilevel
+3.	Hierarchical
+4.	Multiple
+5.	Hybrid
+
+But java does not support multiple and hybrid inheritance.
+
+Encapsulation
+
+•	Encapsulation is process of wrapping the code  into a single unit. 
+
+•	To achieve encapsulation in Java −we Declare the variables of a class as private.
+
+ Now we can use setter and getter method to set the data and get the data.
+
+•	Bean class
+•	POJO class
+•	Setter getter
+
+
+Access modifiers:
+ Access modifier is used to define the scope. 
+ Access modifiers are 4 types:
+
+1.	Default	
+2.	Public
+3.	Private
+4.	Protected 
+
+1. Default: default access modifiers is used only inside the package, we can’t access outside the package.
+
+2. Public: public access modifiers is used to define the scope as publicly (it can be access anywhere).
+
+3. Private: private access modifiers scope only within the class (it can be access only inside the class, we can’t access outside the class). 
+
+4. Protected: protected access modifiers is used to parent to child relation when we have two classes in two different packages (it can be access only parent and child relationship in different package).
+
+
+
+Polymorphism
+
+Polymorphism in Java is a concept by which we can perform a single action in different ways. ... 
+
+There are two types of polymorphism in Java: 
+
+Compile-time polymorphism and runtime polymorphism. 
+
+We can perform polymorphism in java by method overloading and method overriding.
+
+Overloading:-
+
+Overloading occurs when two or more methods in one class have the same method name but different parameters.
+
+Overriding:-
+
+Overriding occurs when two methods have the same method name and parameters.
